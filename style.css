@@ -1,0 +1,259 @@
+ @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 35%;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin: 5px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.logo {
+    width: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+
+
+}
+
+.nav-list {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+.nav-list li {
+    width: 30%;
+    border: 17%;
+
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav-list li a:hover {
+    text-decoration: none;
+    color: aqua;
+
+}
+
+.rightNav {
+    width: 50%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+#Search {
+    padding: 5px;
+    font-size: 10px;
+    border: 2px solid rgb(94, 212, 163);
+    border-radius: 9px;
+
+}
+
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url('../img/banner_banner-1.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: cursive;
+    
+    margin: auto;
+}
+
+firstSection {
+    height: 100vh;
+}
+
+
+.secondHalf {
+    width: 30%;
+    border-radius: 10%;
+    height: 70vh;
+}
+
+.secondHalf img {
+    width: 60%;
+    border: 1px;
+    border-radius: 60%;
+    height: 30vh;
+    color: white;
+}
+
+.firstHalf {
+    width: 50%;
+    align-items: center;
+
+}
+
+.text-big {
+    font-size: 30px;
+}
+
+.text-small {
+    font-size: 12px;
+}
+
+.btn {
+    padding: 5px 10px;
+    margin: 7px 0;
+
+    border-radius: 4px solid white;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+}
+
+.btn-sm {
+    padding: 6px 10px;
+    vertical-align: middle;
+    border-radius: solid white;
+}
+.btn-dark{
+    color: black;
+    
+    border-radius: 16%;
+    
+}
+
+.section{
+    height: 500%;
+    display: flex;
+   
+    justify-content: space-evenly;
+    max-width: 50;
+    margin: 10px 30px;
+    font-family: 'Oswald', sans-serif;
+    
+}
+.section-Left{
+    
+    flex-direction: row-reverse;
+}
+.paras{
+    padding: 0px 100px;
+}
+.thumbnail img{
+    margin: 20px 100px;
+    width: 250px;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.Contact{
+    background-color: rgb(161 212 104 / 30%);
+    height: 82vh;
+}
+.text-center {
+    padding-top: 26px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+}
+
+.form{
+    max-width: 800px;
+    margin: auto;
+}
+
+.form-input {
+    padding: 2px;
+    width: 100%;
+    margin: 9px 0;
+    font-size: 16px;
+    border: 2px solid grey;
+    border-radius: 6px;
+}
+.text-footer{
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5px;
+    top: 15px;
+
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 4px 3px;
+}
+
+
+@media only screen and (max-width: 900px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        transition: all 0.7s ease-out;
+        flex-direction: column;
+        height: 350px;
+    }
+    .rightNav{
+        width: 30%;
+        text-align: center;
+    }
+    #Search{
+        width: 56%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+.section{
+    flex-direction: column-reverse;
+}
+.thumbnail img {
+    margin: 24px 100px;
+}
+
+
+}
+
+
+
+
+
